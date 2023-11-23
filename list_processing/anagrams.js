@@ -2,7 +2,7 @@
 // compare
 
 function anagram(word, list) {
-  return list.filter(item => item.split('').sort().join('') === word.split('').sort().join('') )
+  return list.filter(item => sortString(item) === sortString(word));
 }
 function sortString(str) { return str.split('').sort().join('') }
 
