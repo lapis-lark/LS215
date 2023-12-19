@@ -34,3 +34,5 @@ function compareVersions(ver1, ver2) {
 
   return 0;
 }
+
+compareVersions('1', '2')
