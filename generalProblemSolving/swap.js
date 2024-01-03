@@ -1,18 +1,3 @@
-// what to do if number of chars/nums different
-/* 
-  PROBLEM: 
-    swap locations of strings and nums
-
-  DATA: arrays, strings
-  ALGO:
-        generate two arrays, one of all the letters, one numbers
-        iterate over input string
-          if letter, unshift num to new array, vice versa
-          if out of nums/letters, push that char
-
-  
-*/
-
 function swap(str) {
   let [letters, numbers] = [[], []];
   for (char of str) {
