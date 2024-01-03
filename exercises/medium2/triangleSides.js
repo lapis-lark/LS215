@@ -2,7 +2,7 @@ function triangle(...sides) {
   sides = sides.sort(); // implement a num sorting callback function if using nums greater than 9
   if (sides.every(side => side === sides[0])) {
     return 'equilateral';
-  } else if (sides[0] + sides[1] <= sides[2]) {
+  } else if (sides[0] + sides[1] <= sides[2] || sides[0] <= 0) {
     return 'invalid';
   } else if (sides[1] === sides[2]) {
     return 'isosceles';
