@@ -30,5 +30,4 @@ function star(n) {
 }
 
 star(7);
-
 star(9);
